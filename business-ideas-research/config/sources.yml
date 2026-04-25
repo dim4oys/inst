@@ -1,81 +1,115 @@
 sources:
-  hacker_news:
+  maps_reviews:
     enabled: true
-    type: public_api
+    type: manual_or_partner_api
     priority: high
+    regions: [ru_cis, us, eu, mena, sea, latam]
+    signals:
+      - complaints_about_response_time
+      - booking_failures
+      - no_show_mentions
+      - price_or_quote_confusion
+      - repeated_questions
+    examples:
+      - google_maps
+      - yandex_maps
+      - 2gis
+      - yell
+    notes: "Primary layer for local business pain. Look for reviews that mention slow replies, missed calls, booking problems, schedule confusion, and unclear pricing."
+
+  local_messengers_and_social:
+    enabled: true
+    type: public_pages_manual_review
+    priority: high
+    regions: [ru_cis, global]
+    signals:
+      - manual_booking_in_comments
+      - posts_with_schedules_as_images
+      - telegram_or_whatsapp_signup
+      - waitlists
+      - payment_collection
+    examples:
+      - telegram_channels
+      - whatsapp_groups
+      - vk_groups
+      - instagram_pages
+    notes: "Best source for simple operational ideas: sports games, studios, kids classes, beauty services, workshops, and local events."
+
+  booking_products:
+    enabled: true
+    type: public_web_research
+    priority: high
+    regions: [global, ru_cis, us, eu]
+    signals:
+      - product_positioning
+      - underserved_niches
+      - pricing
+      - integrations
+      - reviews_and_complaints
+    examples:
+      - booksy
+      - appointexo
+      - lyxa_ai
+      - telegram_booking_bots
+      - court_reservation_software
+    notes: "Use competitors to find wedge opportunities, not to copy broad CRMs."
+
+  owner_forums:
+    enabled: true
+    type: manual_review
+    priority: medium
+    regions: [global, us, eu, ru_cis]
+    signals:
+      - how_do_you_handle
+      - missed_leads
+      - no_show
+      - scheduling
+      - customer_followup
+    examples:
+      - reddit_smallbusiness
+      - reddit_sweatystartup
+      - reddit_entrepreneur
+      - industry_forums
+    notes: "Useful for owner language and practical pain. Validate with local outreach before scoring high."
+
+  local_sports:
+    enabled: true
+    type: public_web_and_community_review
+    priority: high
+    regions: [global, ru_cis, us, eu]
+    signals:
+      - league_growth
+      - court_shortage
+      - signup_friction
+      - substitutions
+      - player_level_matching
+      - payments
+    examples:
+      - volleyball_communities
+      - pickleball_clubs
+      - padel_courts
+      - municipal_rec_leagues
+    notes: "Good first vertical because events repeat weekly and operational pain is visible in chats."
+
+  hacker_news:
+    enabled: false
+    type: public_api
+    priority: low
     regions: [global]
     signals:
       - show_hn
       - ask_hn
       - launch_hn
       - comments
-    notes: "Start here: stable public API and strong early-tech signals."
+    notes: "Keep only as a technology trend side-channel. It is not a primary source for local business ideas."
 
   product_hunt:
-    enabled: true
+    enabled: false
     type: official_api
-    priority: high
+    priority: low
     regions: [global]
     signals:
       - launches
-      - topics
       - comments
       - votes
-    notes: "Requires API token. Useful for product launches and maker trends."
-
-  github_trending:
-    enabled: true
-    type: mixed
-    priority: high
-    regions: [global]
-    signals:
-      - repositories
-      - topics
-      - stars_growth
-    notes: "Useful for developer tools and technology shifts."
-
-  youtube:
-    enabled: false
-    type: official_api
-    priority: medium
-    regions: [global, us, eu, ru_cis, india, latam, mena, sea]
-    signals:
-      - search_results
-      - channels
-      - comments_optional
-    notes: "Requires Google API key and quota management."
-
-  reddit:
-    enabled: false
-    type: official_api_approval
-    priority: medium
-    regions: [global, us, eu, ru_cis]
-    signals:
-      - subreddits
-      - pain_posts
-      - alternatives
-      - comments
-    notes: "API access may require approval. Use manually until access is confirmed."
-
-  x:
-    enabled: false
-    type: paid_or_limited_api
-    priority: medium
-    regions: [global]
-    signals:
-      - founder_posts
-      - product_launches
-      - trend_terms
-    notes: "Use only if API access and budget are approved."
-
-  rss_news:
-    enabled: true
-    type: rss
-    priority: medium
-    regions: [global, us, eu, ru_cis, india, latam, mena, sea]
-    signals:
-      - startup_news
-      - funding
-      - regulation
-      - market_reports
-    notes: "Reliable layer for weekly review."
+    notes: "Use later for competitor discovery, not as the core source."
