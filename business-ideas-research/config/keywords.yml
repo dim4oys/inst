@@ -1,0 +1,48 @@
+pain_keywords:
+  en:
+    - "looking for a tool"
+    - "alternative to"
+    - "why is it so hard"
+    - "manual process"
+    - "takes too much time"
+    - "too expensive"
+    - "need a better way"
+    - "how do you manage"
+    - "can't find"
+    - "spreadsheet nightmare"
+  ru:
+    - "ищу сервис"
+    - "есть ли аналог"
+    - "как автоматизировать"
+    - "делаю вручную"
+    - "слишком дорого"
+    - "кто как решает"
+    - "нет нормального"
+    - "устал от"
+    - "как упростить"
+    - "не могу найти"
+
+business_keywords:
+  - saas
+  - marketplace
+  - automation
+  - ai agent
+  - workflow
+  - compliance
+  - ecommerce
+  - logistics
+  - creator economy
+  - education
+  - health operations
+  - finance operations
+  - local services
+  - b2b
+  - prosumer
+
+exclusion_keywords:
+  - get rich quick
+  - gambling
+  - adult
+  - piracy
+  - malware
+  - fake reviews
