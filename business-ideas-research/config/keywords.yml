@@ -1,43 +1,63 @@
 pain_keywords:
   en:
-    - "looking for a tool"
-    - "alternative to"
-    - "why is it so hard"
-    - "manual process"
-    - "takes too much time"
-    - "too expensive"
-    - "need a better way"
-    - "how do you manage"
-    - "can't find"
-    - "spreadsheet nightmare"
+    - "missed call"
+    - "no-show"
+    - "online booking"
+    - "appointment reminders"
+    - "how do you handle"
+    - "clients book through DMs"
+    - "waiting list"
+    - "manual scheduling"
+    - "can't get a court"
+    - "lead fell through"
+    - "instant quote"
+    - "after-hours booking"
   ru:
-    - "ищу сервис"
-    - "есть ли аналог"
-    - "как автоматизировать"
-    - "делаю вручную"
-    - "слишком дорого"
-    - "кто как решает"
-    - "нет нормального"
-    - "устал от"
-    - "как упростить"
-    - "не могу найти"
+    - "не отвечают"
+    - "не дозвониться"
+    - "запись через телеграм"
+    - "запись в директ"
+    - "запись в whatsapp"
+    - "кто пойдет на игру"
+    - "есть места"
+    - "лист ожидания"
+    - "предоплата"
+    - "перенос записи"
+    - "забыли про запись"
+    - "расписание в картинке"
+    - "сколько будет стоить"
+    - "пришлите фото"
 
-business_keywords:
-  - saas
-  - marketplace
-  - automation
-  - ai agent
-  - workflow
-  - compliance
-  - ecommerce
-  - logistics
-  - creator economy
-  - education
-  - health operations
-  - finance operations
+local_business_keywords:
+  - amateur sports
+  - volleyball
+  - pickleball
+  - padel
+  - beauty salon
+  - barbershop
+  - kids classes
+  - dance studio
+  - restaurant events
+  - catering
+  - home services
+  - cleaning
+  - HVAC
+  - auto service
+  - grooming
   - local services
-  - b2b
-  - prosumer
+
+idea_filters:
+  good:
+    - "owner can explain the pain in one sentence"
+    - "workflow repeats weekly or daily"
+    - "first version can be a bot, form, or small dashboard"
+    - "buyer can be reached manually through maps, groups, or DMs"
+    - "AI removes conversation work, not just adds decoration"
+  bad:
+    - "requires a full marketplace from day one"
+    - "depends on scraping private user data"
+    - "needs complex regulation before first sale"
+    - "looks like a generic CRM with no niche wedge"
 
 exclusion_keywords:
   - get rich quick
