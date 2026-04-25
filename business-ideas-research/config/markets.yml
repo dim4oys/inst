@@ -1,0 +1,46 @@
+markets:
+  global:
+    label: Global
+    priority: high
+    languages: [en]
+
+  us:
+    label: United States
+    priority: high
+    languages: [en]
+
+  eu:
+    label: Europe
+    priority: high
+    languages: [en, de, fr, es, it, nl]
+
+  ru_cis:
+    label: Russia and CIS
+    priority: high
+    languages: [ru]
+
+  india:
+    label: India
+    priority: medium
+    languages: [en, hi]
+
+  sea:
+    label: Southeast Asia
+    priority: medium
+    languages: [en, id, vi, th]
+
+  latam:
+    label: Latin America
+    priority: medium
+    languages: [es, pt]
+
+  mena:
+    label: Middle East and North Africa
+    priority: medium
+    languages: [en, ar]
+
+  china:
+    label: China
+    priority: low
+    languages: [zh]
+    notes: "Needs separate source strategy because many platforms are not globally accessible."
