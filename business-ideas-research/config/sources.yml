@@ -1,0 +1,81 @@
+sources:
+  hacker_news:
+    enabled: true
+    type: public_api
+    priority: high
+    regions: [global]
+    signals:
+      - show_hn
+      - ask_hn
+      - launch_hn
+      - comments
+    notes: "Start here: stable public API and strong early-tech signals."
+
+  product_hunt:
+    enabled: true
+    type: official_api
+    priority: high
+    regions: [global]
+    signals:
+      - launches
+      - topics
+      - comments
+      - votes
+    notes: "Requires API token. Useful for product launches and maker trends."
+
+  github_trending:
+    enabled: true
+    type: mixed
+    priority: high
+    regions: [global]
+    signals:
+      - repositories
+      - topics
+      - stars_growth
+    notes: "Useful for developer tools and technology shifts."
+
+  youtube:
+    enabled: false
+    type: official_api
+    priority: medium
+    regions: [global, us, eu, ru_cis, india, latam, mena, sea]
+    signals:
+      - search_results
+      - channels
+      - comments_optional
+    notes: "Requires Google API key and quota management."
+
+  reddit:
+    enabled: false
+    type: official_api_approval
+    priority: medium
+    regions: [global, us, eu, ru_cis]
+    signals:
+      - subreddits
+      - pain_posts
+      - alternatives
+      - comments
+    notes: "API access may require approval. Use manually until access is confirmed."
+
+  x:
+    enabled: false
+    type: paid_or_limited_api
+    priority: medium
+    regions: [global]
+    signals:
+      - founder_posts
+      - product_launches
+      - trend_terms
+    notes: "Use only if API access and budget are approved."
+
+  rss_news:
+    enabled: true
+    type: rss
+    priority: medium
+    regions: [global, us, eu, ru_cis, india, latam, mena, sea]
+    signals:
+      - startup_news
+      - funding
+      - regulation
+      - market_reports
+    notes: "Reliable layer for weekly review."
