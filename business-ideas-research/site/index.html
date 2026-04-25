@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business Ideas Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Business Ideas Research</p>
+        <h1>Панель оценки идей</h1>
+      </div>
+      <div class="header-meta">
+        <span>Пилот: Hacker News</span>
+        <strong>25.04.2026</strong>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="summary-grid" aria-label="Сводка">
+        <article class="metric">
+          <span class="metric-label">Идей в обзоре</span>
+          <strong id="metricTotal">0</strong>
+          <small>из первого HN-прогона</small>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Средний балл</span>
+          <strong id="metricAverage">0</strong>
+          <small>по 50-балльной шкале</small>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Главная тема</span>
+          <strong id="metricTheme">AI</strong>
+          <small>самый плотный кластер</small>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Сигналов</span>
+          <strong>60</strong>
+          <small>show, ask, new stories</small>
+        </article>
+      </section>
+
+      <section class="toolbar" aria-label="Фильтры">
+        <div class="segmented" role="tablist" aria-label="Фильтр по статусу">
+          <button class="segmented-button is-active" data-filter="all" type="button">Все</button>
+          <button class="segmented-button" data-filter="watch" type="button">Watch</button>
+          <button class="segmented-button" data-filter="promising" type="button">Promising</button>
+          <button class="segmented-button" data-filter="archive" type="button">Archive</button>
+        </div>
+        <label class="search-box">
+          <span>Поиск</span>
+          <input id="searchInput" type="search" placeholder="AI, devtools, vault..." />
+        </label>
+      </section>
+
+      <section class="content-grid">
+        <section class="ideas-area" aria-label="Карточки идей">
+          <div class="section-title">
+            <h2>Идеи-кандидаты</h2>
+            <span id="visibleCount">0 показано</span>
+          </div>
+          <div id="ideasGrid" class="ideas-grid"></div>
+        </section>
+
+        <aside class="detail-panel" aria-label="Детали идеи">
+          <div id="detailContent"></div>
+        </aside>
+      </section>
+
+      <section class="analysis-grid" aria-label="Аналитика">
+        <div class="theme-panel">
+          <div class="section-title">
+            <h2>Темы из сигналов</h2>
+            <span>HN pilot</span>
+          </div>
+          <div id="themeBars" class="theme-bars"></div>
+        </div>
+
+        <div class="matrix-panel">
+          <div class="section-title">
+            <h2>Карта риска</h2>
+            <span>спрос / запуск</span>
+          </div>
+          <div class="matrix">
+            <div class="matrix-axis y-axis">Сложнее запустить</div>
+            <div class="matrix-axis x-axis">Больше спрос</div>
+            <div id="matrixPoints" class="matrix-points"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
