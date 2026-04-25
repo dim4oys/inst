@@ -1,0 +1,66 @@
+{
+  "date": "2026-04-25",
+  "focus": "local business ideas solvable with AI and simple automation",
+  "search_audit": {
+    "previous_bias": "Hacker News, Product Hunt, and GitHub Trending overrepresent developer tools, AI infrastructure, and SaaS launches.",
+    "new_primary_sources": [
+      "maps and review sites",
+      "Telegram/WhatsApp/VK/Instagram communities",
+      "booking and scheduling products",
+      "owner forums",
+      "local sports communities",
+      "industry reports"
+    ],
+    "decision": "Use HN only as a side-channel. Local business ideas should be sourced from operational pain near the transaction."
+  },
+  "signals": [
+    {
+      "source": "Axios",
+      "url": "https://www.axios.com/2025/07/29/adult-sports-league",
+      "signal": "Adult recreational sports leagues are growing; volleyball is one of the most popular league sports.",
+      "idea_fit": "AI booking and coordination for volleyball, pickleball, padel, and other weekly games."
+    },
+    {
+      "source": "Telemetr / Volleyball Moscow channel",
+      "url": "https://telemetr.io/en/channels/1706009238-mskvolleyball/posts",
+      "signal": "Volleyball organizers publish times, levels, prices, and signup calls directly in Telegram posts.",
+      "idea_fit": "Telegram bot can handle signups, level matching, waitlists, reminders, and payment status."
+    },
+    {
+      "source": "Business.com",
+      "url": "https://www.business.com/articles/ai-usage-smb-workplace-study/",
+      "signal": "Small businesses increasingly invest in practical AI, including scheduling and customer communication.",
+      "idea_fit": "Sell narrow AI admin tools instead of broad AI platforms."
+    },
+    {
+      "source": "CallJolt",
+      "url": "https://calljolt.com/blog/guides/home-service-business-missed-call-statistics",
+      "signal": "Home service businesses lose leads when calls are missed and voicemails are abandoned.",
+      "idea_fit": "AI receptionist that captures job details and books callbacks for plumbers, cleaners, HVAC, and repair crews."
+    },
+    {
+      "source": "BookrHub",
+      "url": "https://www.bookrhub.com/en/no-show-report-2026",
+      "signal": "Appointment businesses lose revenue to no-shows and weak cancellation workflows.",
+      "idea_fit": "No-show autopilot with reminders, deposits, waitlists, and empty-slot refilling."
+    },
+    {
+      "source": "USA Pickleball",
+      "url": "https://usapickleball.org/about-us/organizational-docs/pickleball-annual-growth-report/",
+      "signal": "Pickleball locations continue expanding, creating court booking and programming pressure.",
+      "idea_fit": "Small-club court booking and open-play management for clubs that do not need a heavy enterprise system."
+    },
+    {
+      "source": "Appointexo",
+      "url": "https://www.appointexo.com/en/",
+      "signal": "Telegram booking assistants are actively positioned for small service businesses.",
+      "idea_fit": "Competition confirms demand; wedge should be a specific vertical and setup service."
+    },
+    {
+      "source": "Lyxa AI",
+      "url": "https://lyxaai.com/ru/telegram-bot-dlya-biznesa",
+      "signal": "Russian-language AI booking products promise Telegram-based client booking and message handling.",
+      "idea_fit": "Local demand exists; opportunity is in packaged niche workflows such as sports, kids classes, and salons."
+    }
+  ]
+}
