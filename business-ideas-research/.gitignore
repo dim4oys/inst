@@ -1,8 +1,3 @@
 .env
 .DS_Store
 Thumbs.db
-data/raw/*.jsonl
-data/raw/*.json
-data/normalized/*.jsonl
-data/normalized/*.json
-data/exports/*.csv
