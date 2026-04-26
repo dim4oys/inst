@@ -1,0 +1,42 @@
+{
+  "date": "2026-04-26",
+  "focus": "broad local business ideas beyond amateur sports",
+  "search_rule": "Find recurring money leaks close to the transaction: missed calls, slow quotes, no-shows, waste, empty capacity, and churn.",
+  "ideas": [
+    {
+      "id": "home-service-quote-router",
+      "score": 44,
+      "signals": ["missed calls", "speed-to-lead", "instant quote", "after-hours capture"]
+    },
+    {
+      "id": "wedding-venue-proposal-copilot",
+      "score": 42,
+      "signals": ["slow proposal", "manual pricing PDF", "high-ticket inquiry", "follow-up gap"]
+    },
+    {
+      "id": "auto-service-bay-fill",
+      "score": 40,
+      "signals": ["after-hours calls", "service no-shows", "idle bays", "advisor overload"]
+    },
+    {
+      "id": "pet-care-front-desk",
+      "score": 39,
+      "signals": ["front desk overload", "pet owner urgency", "grooming no-shows", "human escalation"]
+    },
+    {
+      "id": "restaurant-waste-par-planner",
+      "score": 38,
+      "signals": ["food waste", "wrong prep", "inventory forecasting", "thin margins"]
+    },
+    {
+      "id": "fitness-retention-nudges",
+      "score": 37,
+      "signals": ["silent churn", "attendance drop-off", "first 90 days", "retention nudges"]
+    },
+    {
+      "id": "dental-missed-call-recovery",
+      "score": 36,
+      "signals": ["missed patient calls", "no-shows", "high-value patient", "crowded niche"]
+    }
+  ]
+}
