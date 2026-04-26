@@ -1,0 +1,42 @@
+{
+  "date": "2026-04-26",
+  "focus": "white-space local business ideas with fewer direct analogs",
+  "filter": [
+    "avoid generic AI receptionist",
+    "avoid generic booking bot",
+    "avoid broad CRM",
+    "prefer proof, compliance, workflow extraction, authenticity, and hidden margin pain"
+  ],
+  "ideas": [
+    {
+      "id": "workflow-cartographer",
+      "score": 43,
+      "novelty_reason": "Productized pre-automation workflow extraction for SMBs, not another automation tool."
+    },
+    {
+      "id": "contractor-proof-pack",
+      "score": 42,
+      "novelty_reason": "Proof provenance and guided evidence packets for contractors amid AI-photo distrust."
+    },
+    {
+      "id": "menu-allergen-diff",
+      "score": 40,
+      "novelty_reason": "Recipe/supplier/menu diffing across changing menus and delivery apps, not generic menu software."
+    },
+    {
+      "id": "authentic-ad-studio",
+      "score": 39,
+      "novelty_reason": "Authenticity-preserving local ad creative, positioned against AI-looking synthetic ads."
+    },
+    {
+      "id": "field-margin-drift",
+      "score": 38,
+      "novelty_reason": "Explains which job types lose margin from messy field data, beyond CRM job tracking."
+    },
+    {
+      "id": "micro-permit-renewal-agent",
+      "score": 36,
+      "novelty_reason": "Preparation of renewal packets by region/type, not only deadline reminders."
+    }
+  ]
+}
